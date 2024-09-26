@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.filter-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.traits-dropdown select, .search-section input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+}
+
+.traits-dropdown select {
+    background-color: #33475b;
+    color: white;
+}
+
+.search-section input {
+    width: 200px;
+    background-color: #33475b;
+    color: white;
+}
+
+.champion-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
+    gap: 20px;
+}
+
+.champion {
+    text-align: center;
+}
+
+.champion img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.champion img:hover {
+    transform: scale(1.1);
+}
+
+.champion p {
+    font-size: 14px;
+}
